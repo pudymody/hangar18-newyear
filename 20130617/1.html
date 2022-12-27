@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="20130617/favicon.ico" type="image/x-icon">
+<title>Hangar18 - Feliz Año Hangar !!!</title>
+<link rel="stylesheet" type="text/css" href="20130617/estilos-sp.css">
+<script type="text/javascript" src="20130617/acciones-sp-1.1.js"></script>
+</head>
+<body>
+
+<div class="barra">
+			<a class="profilename" style="border-left:none;" href="#" title="Inicio"><img src="20130617/inicio.png" align="absmiddle"></a>
+			
+			<div class="morecont">
+					<a class="profilename" onclick="$('.more').toggle();"><img src="20130617/flechita_down.png"></a>
+					<ul class="more">
+					<div style="width: 0pt; height: 0pt; border-left: 5px solid transparent; border-right: 5px solid transparent; position: absolute; left: 11px; border-bottom: 5px solid rgba(255, 255, 255, 0.8); top: -5px;"></div>
+					
+					<li><a href="#">Posts</a></li>
+					<li><a href="#">Chat</a></li>
+					<li><a href="#">TOPs</a></li>
+					<li><a href="#">Buscar</a></li>
+					<li><a href="#">Records</a></li></ul></div><a class="profilename" href="#">Ingresar</a>
+				<a class="profilename" href="#" style="border-right:1px solid #151515">Registrate</a>
+	<div class="userInfoLogin">
+		<form action="#" method="post" accept-charset="ISO-8859-1" name="frmLogin" id="frmLogin" onsubmit="hashLoginPassword(this, '3fb0023e341bf766d6ed49b99466c53c');">
+			<input value="Usuario" maxlength="64" id="usrnme" name="user" class="logininput" type="text" onfocus="if (this.value == 'Usuario') this.value = '';">
+			<input value="Password" maxlength="64" id="psswrd" name="passwrd" class="logininput" type="password" onfocus="if (this.value == 'Password') this.value = '';">
+			<input class="Boton Small BtnGray" style="font-size: 11px; width: 50px;" size="30" value="Entrar" title="Iniciar sesión" type="submit">
+		</form>
+	</div>
+		</div>
+
+	<div id="maincontainer" class="clearfix">
+	
+<div style="position:relative;">
+	<a id="prev" onclick="Slider.Prev()"></a>
+	<a id="next" onclick="Slider.Next()"></a>
+	<script type="text/javascript">
+		
+		var Slider = {
+			'index' : 0,
+			'Next' : function(){
+				if(this.index + 1 > this.total){
+					this.index = 0;
+				}else{
+					this.index++;
+				}
+				
+				$('#slider').animate({scrollLeft : this.index * 941},1000);
+			},
+			
+			'Prev' : function(){
+				if(this.index - 1 < 0){
+					this.index = this.total;
+				}else{
+					this.index--;
+				}
+				
+				$('#slider').animate({scrollLeft : this.index * 941},1000);
+			}
+		};
+		
+		$(function(){
+			Slider.total = $('#slider .fotoslider').length - 1;
+			
+			var size = $('#slider .fotoslider').length * 941;
+			$('#slider > div').css('width',size);
+		});
+	</script>	
+	<div id="slider">
+		<div style="width: 5646px;">
+		    <div class="fotoslider"><img src="20130617/HEAD1.png" alt="Portal de Heavy Metal"></div>
+			<div class="fotoslider"><img src="20130617/HEAD6.png" alt="heavy metal portal"></div>
+			<div class="fotoslider"><img src="20130617/HEAD2.png" alt="heavy, trash, power metal"></div>
+			<div class="fotoslider"><img src="20130617/HEAD3.png" alt="Trash Zone"></div>
+			<div class="fotoslider"><img src="20130617/HEAD4.png" alt="hangar 18"></div>
+			<div class="fotoslider"><img src="20130617/HEAD5.png" alt="La H hangar 18"></div>
+		</div>
+	</div>
+	<div id="mensaje-top">
+	<div id="smfFadeScroller" style="opacity: 0.74;"><span style="color: White;"><b>Hangar 18</b>...Reborn in Black..!!!</span></div>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		// The fading delay (in ms.)
+		var smfFadeDelay = 5000;
+		// Fade from... what text color? To which background color?
+		var smfFadeFrom = {"r": 0, "g": 0, "b": 0}, smfFadeTo = {"r": 255, "g": 255, "b": 255};
+		// Surround each item with... anything special?
+		var smfFadeBefore = "", smfFadeAfter = "";
+	
+		var foreColor, backEl, backColor;
+	
+		if (typeof(document.getElementById('smfFadeScroller').currentStyle) != "undefined")
+		{
+			foreColor = document.getElementById('smfFadeScroller').currentStyle.color.match(/#([\da-f][\da-f])([\da-f][\da-f])([\da-f][\da-f])/);
+			smfFadeFrom = {"r": parseInt(foreColor[1]), "g": parseInt(foreColor[2]), "b": parseInt(foreColor[3])};
+	
+			backEl = document.getElementById('smfFadeScroller');
+			while (backEl.currentStyle.backgroundColor == "transparent" && typeof(backEl.parentNode) != "undefined")
+				backEl = backEl.parentNode;
+	
+			backColor = backEl.currentStyle.backgroundColor.match(/#([\da-f][\da-f])([\da-f][\da-f])([\da-f][\da-f])/);
+			smfFadeTo = {"r": eval("0x" + backColor[1]), "g": eval("0x" + backColor[2]), "b": eval("0x" + backColor[3])};
+		}
+		else if (typeof(window.opera) == "undefined" && typeof(document.defaultView) != "undefined")
+		{
+			foreColor = document.defaultView.getComputedStyle(document.getElementById('smfFadeScroller'), null).color.match(/rgb\((\d+), (\d+), (\d+)\)/);
+			smfFadeFrom = {"r": parseInt(foreColor[1]), "g": parseInt(foreColor[2]), "b": parseInt(foreColor[3])};
+	
+			backEl = document.getElementById('smfFadeScroller');
+			while (document.defaultView.getComputedStyle(backEl, null).backgroundColor == "transparent" && typeof(backEl.parentNode) != "undefined" && typeof(backEl.parentNode.tagName) != "undefined")
+				backEl = backEl.parentNode;
+	
+			backColor = document.defaultView.getComputedStyle(backEl, null).backgroundColor;
+			smfFadeTo = {"r": parseInt(backColor[1]), "g": parseInt(backColor[2]), "b": parseInt(backColor[3])};
+		}
+	
+		// List all the lines of the news for display.
+		var smfFadeContent = new Array("<span style=\"color: White;\"><b>Hangar 18<\/b>...Reborn in Black..!!!<\/span>","<span style=\"color: White;\">Bienvenido A Nuestra Fantástica Fortaleza... <b>Hangar 18<\/b>!!<\/span>","<span style=\"color: White;\"><b>Hangar 18<\/b>...Metal Heart !!!<\/span>");
+	// ]]></script>
+	<script language="JavaScript" type="text/javascript" src="20130617/fader.js"></script>
+	</div>
+</div>
+	
+	<div id="bodyarea">
+<a href="#"><img style="position: fixed; bottom: 0pt; right: 0pt;" img="" src="20130617/up.png" border="0"></a>
+
+<a href="#pie"><img style="position: fixed; bottom: 30pt; right: 0pt;" img="" src="20130617/down.png" border="0"></a>
+<!--Headers--><!--End Headers-->
+
+
+
+<!-- <a name="arriba"></a> -->
+<div class="opener clearfix" onclick="Youtube.PrepareWords();" title="¿El Post No Tiene Videos? Buscalos."><img src="20130617/youtube.png" style="float:right;" alt="Youtube"></div>
+<div class="micajita clearfix" style="padding:8px;border-left:3px solid grey">
+	<a href="#" title="Ver Perfil" style="float:left;position:relative;">
+		<img src="20130617/avatar1.jpg" style="    border: 1px solid #45484D;float: left;height: 77px;margin-right: 10px;width: 77px;">
+	</a><span style="float:right;" title="Argentina"><img src="20130617/AR.png"></span>
+	<span style="font-size: 25px;text-align: left;">
+				<a title="Ver perfil de urijuno" href="#"><font color="#006595">@urijuno</font></a>
+				<br>
+	</span>
+	<font style="float: left; margin-top: 27px;" size="4" color="grey">Hell ain´t a bad place to Be[er]</font>
+	<span style="float: right; margin-top: 4px;font-size:15px;color: fireBrick;font-weight: bold;">Administrador</span>
+	<span style="float: right; margin-top: 6px; margin-right: 3px;" title="Administrador"><img src="20130617/admin.gif" alt="*" border="0"></span><br>
+	<span style="float: right;font-size:15px;color:grey;"><a href="#" style="color:grey;"><b>305</b> Posts</a>
+		<b>26220</b> Puntos</span>
+	</div>
+			<ul id="crumbs" style="margin-bottom:10px;">
+				<li><a href="#">Música</a></li>
+				<li><a href="#" id="titulitogroso">Feliz Año Hangar !!!</a></li>
+			</ul>
+			
+			<div>
+			<div class="micajita" style="word-wrap: break-word;padding: 4px;" id="post_40290">
+
+			<div style="text-align:center;"><img src="../posts/1/jKFkq.png" alt="../posts/1/jKFkq.png" /><br /><br /><br /><br /><br /><br /><span style="color:white"><span style="font-size:18pt">De parte de todo el staff de H, y para todos y cada uno quienes desde su lugar hacen Hangar día a día, les deseamos un gran 2011, lleno de las cosas que cada uno se proponga y desee...<br />Un abrazo grande para todos los que hacen esta gran comunidad..!</span></span><br /><br /><br /><br /><span style="color:red"><span style="font-size:24pt">Feliz año 4 all..!</span></span><br /><br /><br /><br /><br /><br /><br /><img src="../posts/1/AY6Xy.png" alt="../posts/1/AY6Xy.png"/><br /><br /><br /><img src="../posts/1/zjOFI.jpg" alt="../posts/1/zjOFI.jpg"/><br /><br /><br /><br /><img src="../posts/1/t2bQk.jpg" alt="../posts/1/t2bQk.jpg"/><br /><br /><br /><br /><span style="color:white"><span style="font-size:18pt">Por un 2011 lleno de cosas buenas, y por un año donde podamos seguir hacer creciendo a nuestra querida H !!!</span></span><br /><br /><br /><br /><img src="../posts/1/AZjR3.png" alt="../posts/1/AZjR3.png"/><br /><br /><br /><br /></div>
+
+			</div>
+
+<div class="clearfix">
+	<div class="micajita" style="padding:8px;text-align:center;float:right;height:100px;"><a href="#" target="_blank"><img src="20130617/redvanker-465x68.png"></a></div>
+	<div class="micajita" style="padding:8px;text-align:center;float:left;height:100px;">
+		<a title="Icarus Music" href="#" target="_blank"><img src="20130617/icarus.png"></a>
+		<a title="4G Producciones" href="#" target="_blank"><img src="20130617/4g.png" style="margin:0px 5px;"></a>
+		<a title="Volumen 4" href="#" target="_blank"><img src="20130617/v4.jpg"></a>
+	</div>
+</div>
+
+<div class="micajita clearfix" style="margin:10px 0px;padding:5px;text-align:center;"><span id="favs" style="margin-bottom:5px;"></span>Usuarios no registrados y lecheer no puede calificar.<div class="clearfix" style="padding-top: 5px; border-top: 1px solid #555;">
+	<div style="float:left;">
+	El: 31 de Diciembre, 2010. 09:59:35
+	</div>
+	<div style="float:right;">
+	<span class="icons visitas">160</span> <span class="icons fav"><span id="cant_favs_post">0</span></span>
+	<span class="icons puntos"> <span id="cant_pts_post">60</span></span>
+	</div>
+</div></div>
+
+<div class="clearfix">
+<div style="float: right; cursor: pointer; padding: 9px;margin-bottom:0px;" onclick="$('#recomendaditos').toggle();" class="micajita">Posts Relacionados</div>
+</div>
+
+
+<div class="micajita" style="position: relative; margin-top: 15px;display:none;" id="recomendaditos">
+<div style="width: 0pt; height: 0pt; position: absolute; right: 51px; border-bottom: 10px solid #555555; border-left: 10px solid transparent; border-right: 10px solid transparent; top: -10px;"></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="Necroccultus - Encircling The Mysterious Necrorevelati">Necroccultus - Encircling The Mysterious Necrorevelati</a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="Slugathor - 5 x 1 (Old School Death)">Slugathor - 5 x 1 (Old School Death)</a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title=" Exumer - A Mortal In Black EP (1985) [320 kbps] "> Exumer - A Mortal In Black EP (1985) [320 kbps] </a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="Gothic Slam - Thrash Metal Old School (EE.UU) ">Gothic Slam - Thrash Metal Old School (EE.UU) </a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="(pedido) Benediction - Killing Music (Digipack)">(pedido) Benediction - Killing Music (Digipack)</a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="Cathedral - In Memoriam [1999] [320 Kbps]">Cathedral - In Memoriam [1999] [320 Kbps]</a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="Serpent Ascending-The EnigmaUnsettled (OldSchoolDeath)">Serpent Ascending-The EnigmaUnsettled (OldSchoolDeath)</a></div><div class="content"><img src="20130617/icono_4.gif" title="Música" align="absmiddle"> <a href="#" title="Brujeria Hellfest 2012 (320 Kbps) Hecho por mi">Brujeria Hellfest 2012 (320 Kbps) Hecho por mi</a></div></div>
+
+
+</div>
+<!-- info del post -->
+<div>
+<!-- fin info del post --><!-- comentarios -->
+
+<div id="cmt_1929" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://box.jisko.net/i/dede3f.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1929"></b><a href="#"><font color="#006595"><b> @CharliMustaine</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Seeee locooooooo  <img src="../posts/smileys/hangar.gif" alt=":hangar:" /> Igualmente para todos ustedes!   <img src="../posts/smileys/vic2.gif" alt=":vic:" /> </div></div></div><div id="cmt_147" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/OQJHg.png" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_147"></b><a href="#"><font color="#006595"><b> @Miguel_Megadeth10</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><img src="http://i.imgur.com/t2bQk.jpg" alt="http://i.imgur.com/t2bQk.jpg" onerror="error_img(this);"/><br />
+Va a triunfar este post !   <img src="../posts/smileys/clab.gif" alt=":clab:" /> Que grosso che yo tambien, les deseo a todos un muy feliz año y que lo que viene este repleto de propseridad, y esta noche empedense mientras escuchan Heavy Metal  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> yo me parece que a las 12 voy a estar en el cuarto sueño porque hoy corro una carrera de 7 Km  <img src="../posts/smileys/ninja.gif" alt=":ninja:" /> , saludos para todos ! y larga vida a la H !  <img src="../posts/smileys/alabar.gif" alt=":alaba:" /> <br />
+ <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> +10!  <img src="../posts/smileys/img0114.gif" alt=":urijuno:" /> <br />
+<br />
+<br />
+<br />
+<b>y  .  .  .  thrash `till death !  !  ! </b></div></div></div><div id="cmt_140" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://miralaonline.net/images/bXo6P.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_140"></b><a href="#"><font color="#006595"><b> @Krotto</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>feliz navida? ah no, año nuevo.. ano nuevo (?)<br />
+bla, bla, bla,  chupense todo y agan quilombo <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> sino a dormir  <img src="../posts/smileys/icon_evil.gif" alt=":evil:" /> </div></div></div><div id="cmt_51" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i39.tinypic.com/jsf71t.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_51"></b><a href="#"><font color="#006595"><b> @capitanrickotero1</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>feliz año nuevo loco pasenlá bien<br />
+escabiensé todo<br />
+pongan heavy al palaso<br />
+y rompanlé todo al vecino<br />
+mojenle los cohetes a los pendejos<br />
+y coman mucho mani con chocolate  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce:</div></div></div><div id="cmt_259" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://4.bp.blogspot.com/_Bj4PiB7q4f0/RuxDLrfHWHI/AAAAAAAAATI/qqiTKlcCRPc/s320/Marduk_-_Fuck_Me_Jesus.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_259"></b><a href="#"><font color="#006595"><b> @Lezfe</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año para vos uri y para todos los demas. Espero que la puedan pasar con las personas que uno valora esta noche.<br />
+<br />
+Salud!  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> </div></div></div><div id="cmt_193" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i915.photobucket.com/albums/ac355/ripforever1/url.jpg?t=1292657823" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_193"></b><a href="#"><font color="#006595"><b> @ripforever</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><b>Larga vida a la H! ¡LOCOOO!</b><br />
+Aguante la comu y los giles que cada día la visitamos. <img src="../posts/smileys/bang.gif" alt=":headbang:" /> :headbang: <img src="../posts/smileys/bang.gif" alt=":headbang:" /> :headbang: <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> </div></div></div><div id="cmt_7" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://s7.tinypic.com/wm060p_th.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_7"></b><a href="#"><font color="#006595"><b> @Megaforce777</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><div style="text-align:center;">.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<img src="http://www.miscomentariosparahi5.com/comentarios/feliz-anio-nuevo/comentarios-de-feliz-anio-nuevo-69.gif" alt="http://www.miscomentariosparahi5.com/comentarios/feliz-anio-nuevo/comentarios-de-feliz-anio-nuevo-69.gif" onerror="error_img(this);"/><br />
+<br />
+<br />
+<br />
+ <img src="../posts/smileys/ninja.gif" alt=":ninja:" /> <br />
+<br />
+.</div></div></div></div><div id="cmt_840" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i741.photobucket.com/albums/xx53/salva_ca/immortal-gif_o_GIFSoupcom.gif?t=1301619275" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_840"></b><a href="#"><font color="#006595"><b> @salva_ca</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Que año de mierda! esperemos que el que venga sea un poco mejor! <br />
+Feliz año a todos y que pasen el fin de año de 10  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> </div></div></div><div id="cmt_155" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://box.jisko.net/i/8de56e.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_155"></b><a href="#"><font color="#006595"><b> @ironmanpmp</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>feliz año para todos ustedes.<br />
+espero que todos puedan cumplir ese sueño que quieran para este año q entra, y todo lo mejor para ustedes che  <img src="../posts/smileys/alabar.gif" alt=":alaba:" /> :alaba: :alaba:.<br />
+Es muy bueno pasar otro fiesta aca en hangar <img src="../posts/smileys/2mg3506.jpg.gif" alt=":muchasgracias:" /> </div></div></div><div id="cmt_30" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/LM3Q1.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_30"></b><a href="#"><font color="#006595"><b> @nadm87</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz Año!!!! 2010 vino con Megadeth y Lamb og God y el 2011 se viene con Iron Maiden <img src="../posts/smileys/bang.gif" alt=":headbang:" /> :headbang: <img src="../posts/smileys/bang.gif" alt=":headbang:" /> Yo me voy a Patagones, nos vemos el domingo, pasenla lindo <img src="../posts/smileys/xD.gif" alt=":xd:" /> </div></div></div><div id="cmt_63" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i33.tinypic.com/35incet.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_63"></b><a href="#"><font color="#006595"><b> @miguedeth</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>que grande el hangar,menos mal que lo pise en este año tambien ajajjajaaj,<br />
+<br />
+un regalo para uri,no se pongan celosos los demas ! ya va a ver para todos...<br />
+<br />
+<img src="http://img703.imageshack.us/img703/4389/urih.jpg" alt="http://img703.imageshack.us/img703/4389/urih.jpg" onerror="error_img(this);"/><br />
+<br />
+<br />
+<img src="http://img412.imageshack.us/img412/9615/uri2x.jpg" alt="http://img412.imageshack.us/img412/9615/uri2x.jpg" onerror="error_img(this);"/><br />
+<br />
+<br />
+Pasenla bien todos y si tomaron mucho no manejen! Saludos desde el Valhalla !<br />
+<br />
+<br />
+<br />
+ <img src="../posts/smileys/vikingo.gif" alt=":viking:" /> </div></div></div><div id="cmt_30" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/LM3Q1.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_30"></b><a href="#"><font color="#006595"><b> @nadm87</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><blockquote><div class="cita"><a href="perfil/miguedeth/">miguedeth</a></div><div class="citacuerpo">que grande el hangar,menos mal que lo pise en este año tambien ajajjajaaj,<br />
+<br />
+un regalo para uri,no se pongan celosos los demas ! ya va a ver para todos...<br />
+<br />
+<img src="http://img703.imageshack.us/img703/4389/urih.jpg" alt="http://img703.imageshack.us/img703/4389/urih.jpg" onerror="error_img(this);"/><br />
+<br />
+<br />
+<img src="http://img412.imageshack.us/img412/9615/uri2x.jpg" alt="http://img412.imageshack.us/img412/9615/uri2x.jpg" onerror="error_img(this);"/><br />
+<br />
+<br />
+Pasenla bien todos y si tomaron mucho no manejen! Saludos desde el Valhalla !<br />
+<br />
+<br />
+<br />
+:viking:</div></blockquote><br />
+aaaajajajjajjaja <img src="../posts/smileys/laugh2.gif" alt=":risa:" /> :risa: <img src="../posts/smileys/laugh2.gif" alt=":risa:" /> Migue! la lady gaga de hangar es jimi <img src="../posts/smileys/bang.gif" alt=":headbang:" /> </div></div></div><div id="cmt_4" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/lxfBK.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_4"></b><a href="#"><font color="#006595"><b> @urijuno</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>aaajaajajajajajajajaj  <img src="../posts/smileys/clab.gif" alt=":clab:" /> :clab: <img src="../posts/smileys/clab.gif" alt=":clab:" /> q grande Migue xD  <img src="../posts/smileys/laugh2.gif" alt=":risa:" /> :risa:<br />
+voy a ver cual estreno esta noche (?)  <img src="../posts/smileys/nana.gif" alt=":nana:" /> :nana: <img src="../posts/smileys/nana.gif" alt=":nana:" /> <br />
+Feliz año para todos y salutes 4 all..!!! <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> </div></div></div><div id="cmt_4" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/lxfBK.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_4"></b><a href="#"><font color="#006595"><b> @urijuno</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><blockquote><div class="cita"><a href="perfil/nadm87/">nadm87</a></div><div class="citacuerpo"><br />
+aaaajajajjajjaja :risa::risa::risa: Migue! la lady gaga de hangar es jimi :headbang:</div></blockquote><br />
+<br />
+se la pedi yo  <img src="../posts/smileys/icon_redface.gif" alt=":redface:" />  pero no se dió cuenta del sarcasmo  <img src="../posts/smileys/nana.gif" alt=":nana:" /> <img src="../posts/smileys/xD.gif" alt=":xd:" /> volvieron las remeras Vikingas (?)  <img src="../posts/smileys/eaea.gif" alt=":eaea:" /> :eaea: <img src="../posts/smileys/eaea.gif" alt=":eaea:" /> <br />
+<br />
+<br />
+<br />
+ <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> </div></div></div><div id="cmt_509" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i1186.photobucket.com/albums/z367/k_viva_el_thrash/kaiowas3.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_509"></b><a href="#"><font color="#006595"><b> @Kaiowas</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz 2011 muchachos !!!!! nos vemos en unos dias despues de las vacaciones  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce:</div></div></div><div id="cmt_952" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://dudelol.com/DO-NOT-HOTLINK-IMAGES/Black-Metal-Ski-Trip.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_952"></b><a href="#"><font color="#006595"><b> @Euronymous</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz 2011, ojala sea mejor y no se nos mueran tantos musicos grosos<br />
+<br />
+</div></div></div><div id="cmt_840" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i741.photobucket.com/albums/xx53/salva_ca/immortal-gif_o_GIFSoupcom.gif?t=1301619275" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_840"></b><a href="#"><font color="#006595"><b> @salva_ca</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><blockquote><div class="cita"><a href="perfil/miguedeth/">miguedeth</a></div><div class="citacuerpo">que grande el hangar,menos mal que lo pise en este año tambien ajajjajaaj,<br />
+<br />
+un regalo para uri,no se pongan celosos los demas ! ya va a ver para todos...<br />
+<br />
+<img src="http://img703.imageshack.us/img703/4389/urih.jpg" alt="http://img703.imageshack.us/img703/4389/urih.jpg" onerror="error_img(this);"/><br />
+<br />
+<br />
+<img src="http://img412.imageshack.us/img412/9615/uri2x.jpg" alt="http://img412.imageshack.us/img412/9615/uri2x.jpg" onerror="error_img(this);"/><br />
+<br />
+<br />
+Pasenla bien todos y si tomaron mucho no manejen! Saludos desde el Valhalla !<br />
+<br />
+<br />
+<br />
+:viking:</div></blockquote><br />
+Aguanten los Hansons! \\&quot;Dubida! tupidubidubtupita\\&quot;  <img src="../posts/smileys/bp.gif" alt=":happy:" /> </div></div></div><div id="cmt_1090" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://www.covershut.com/cd_covers/Mortification-Primitive-Rhythm-Machine-Cd-Cover-30706.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1090"></b><a href="#"><font color="#006595"><b> @mascaradegas</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><b>Felicidades a todos que el 2011 sea mucho mejor que el que pasa!!! a todos uds gracias por formar parte de la flia de HANGAR!!! Una copa de tantas va a todos uds!!!! SALUD Y FELICIDADES!!!</b> <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> <img src="../posts/smileys/bp.gif" alt=":happy:" /> <img src="../posts/smileys/vic2.gif" alt=":vic:" /> </div></div></div><div id="cmt_228" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://a8.sphotos.ak.fbcdn.net/hphotos-ak-snc7/6560_1210248334872_1188650627_629586_3725465_n.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_228"></b><a href="#"><font color="#006595"><b> @el_visio_slayer6</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>me quedo con la foto (?) <img src="../posts/smileys/ninja.gif" alt=":ninja:" />  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+THRASH!!!</div></div></div><div id="cmt_33" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/GOhXO.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_33"></b><a href="#"><font color="#006595"><b> @Lean</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz Año para todos!! <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> Ojala que el que venga sea menos pior <img src="../posts/smileys/eaea.gif" alt=":eaea:" /> <br />
+Tenia pensado un coment mas largo, pero se me olvido todo cuando vi esto<br />
+<img src="http://i.imgur.com/t2bQk.jpg" alt="http://i.imgur.com/t2bQk.jpg" onerror="error_img(this);"/><br />
+Por un momento pensé que no llegaba al 2011 : F<br />
+<br />
+</div></div></div><div id="cmt_1633" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/jy82f.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1633"></b><a href="#"><font color="#006595"><b> @argentinaisnext</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>feliz 2011 para todos los chicos de la H! <br />
+y que este 2011 sea un año mejor!<br />
+ <img src="../posts/smileys/vic2.gif" alt=":vic:" /> :vic: <img src="../posts/smileys/vic2.gif" alt=":vic:" /> :vic:</div></div></div><div id="cmt_393" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/85ECm.png" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_393"></b><a href="#"><font color="#006595"><b> @powerslave97dm</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año nuevo hangar! Y gracias por recibirme a principios de este año, cuano eramo´ como 500 xD<br />
+Que la pasen dpm y el 2011 sea un año lleno de exito.<br />
+ <br />
+<br />
+<br />
+<br />
+<br />
+ <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> <img src="../posts/smileys/poster_sosgroso.gif" alt=":sosgrosso:" /> (grosos y grosas!) <br />
+ <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce:</div></div></div><div id="cmt_128" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://userserve-ak.last.fm/serve/_/32732873/King+Diamond++10.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_128"></b><a href="#"><font color="#006595"><b> @Jasonn</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año para todos!!  <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> <img src="../posts/smileys/clab.gif" alt=":clab:" /> les deseo lo mejor!  <img src="../posts/smileys/thumbsup1.gif" alt=":de10:" /> </div></div></div><div id="cmt_129" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/276073_100000530574722_180170206_n.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_129"></b><a href="#"><font color="#006595"><b> @BlackDemon</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año nuevo a todos los users!<br />
+que tengan un genial 2011!<br />
+<br />
+ <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> </div></div></div><div id="cmt_68" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i56.tinypic.com/2rx77rk.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_68"></b><a href="#"><font color="#006595"><b> @FedeIncorporeal</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año para todos, pasenla exelente con flia, amigos... y metal al palo! <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> </div></div></div><div id="cmt_64" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://st-listas.20minutos.es/images/2011-11/309600/3249456_640px.jpg?1321157695" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_64"></b><a href="#"><font color="#006595"><b> @Darkshade69</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz Año para todos en Hangar, que la pasen de puta madre!<br />
+<br />
+tomen todo lo que puedan, hasta el agua del inodoro!!  <img src="../posts/smileys/bang.gif" alt=":headbang:" /> :headbang:</div></div></div><div id="cmt_840" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i741.photobucket.com/albums/xx53/salva_ca/immortal-gif_o_GIFSoupcom.gif?t=1301619275" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_840"></b><a href="#"><font color="#006595"><b> @salva_ca</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><blockquote><div class="cita"><a href="perfil/Darkshade69/">Darkshade69</a></div><div class="citacuerpo">Feliz Año para todos en Hangar, que la pasen de puta madre!<br />
+<br />
+tomen todo lo que puedan, hasta el agua del inodoro!!:headbang::headbang:</div></blockquote><br />
+Me parece o esa es tu frase de cabezera?  <img src="../posts/smileys/ffff.gif" alt=":fff:" /> </div></div></div><div id="cmt_19" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://imgur.com/futm6.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_19"></b><a href="#"><font color="#006595"><b> @Soy_pablo</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Felizzz añoo señores! pasenla hermoso , escabien , y en esta noche especial brindemos porla H y por todos los users para un feliz 2011 para todos</div></div></div><div id="cmt_1817" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i1.bebo.com/014b/5/mediuml/2006/08/06/21/641145680a1607681738b283383071ml.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1817"></b><a href="#"><font color="#006595"><b> @Edo_Thrasher</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>feliz año a todos!! les deseo lo mejor! y k sea un buen año para ustedes y para la H!!!!!!!! <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> </div></div></div><div id="cmt_5" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/PDxq0.png" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_5"></b><a href="#"><font color="#006595"><b> @RANDALL</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año a todos gente<br />
+un orgullo ser parte de esta maravillosa comunidad  <img src="../posts/smileys/thumbsup1.gif" alt=":de10:" /> <br />
+espero que tengan un excelente nuevo año y a puro metal  <img src="../posts/smileys/hangar.gif" alt=":hangar:" /> brindo con ustedes desde aca  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> <br />
+<iframe width="640" height="360" src="http://www.youtube.com/embed/Ibz5OuB_ryc?rel=0&fs=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br />
+</div></div></div><div id="cmt_43" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://a08.t26.net/avatares/1/1/0/9/120_11094825.jpg?600261" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_43"></b><a href="#"><font color="#006595"><b> @Dave_Murray</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año nuevo loco pasenla de 10!<br />
+y por un 2011 lleno de alegrias  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> <br />
+ <img src="../posts/smileys/buenpost.gif" alt=":buenpost:" /> </div></div></div><div id="cmt_2358" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://hangar18.com.ar/Themes/default/images/avatar.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_2358"></b><a href="#"><font color="#006595"><b> @il_fino</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><b>Feliz año che!</b><br />
+Aguante Hangar!<br />
+ <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> :hangar18rules: <img src="../posts/smileys/rules.gif" alt=":hangar18rules:" /> :hangar18rules:<br />
+</div></div></div><div id="cmt_426" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://fotos.subefotos.com/00472ee9dc8b0fb0ed5a819eb8b8172eo.png" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_426"></b><a href="#"><font color="#006595"><b> @tony_kakko</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz AÑo Nuevo HANGAR18!!!<br />
+Gracias por las buenas y las malas, gracias por todos los discos que pude escuchar, gracias por todos los debates constructivos de este año y gracias por haberme puntuado en los posts y haberme agradecido por aportar!<br />
+GRACIAS A TODOS Y FELIZ AÑO NUEVO PARA TODOS !!! </div></div></div><div id="cmt_32" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://s6.argim.net/files/w/anthrax_logo_6290d3810f_seeklogo_176.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_32"></b><a href="#"><font color="#006595"><b> @guacante</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div> <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> </div></div></div><div id="cmt_2" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/p3TPt.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_2"></b><a href="#"><font color="#006595"><b> @Bruzz</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>felicidades para todossssssssss  <img src="../posts/smileys/smiley34.gif" alt=":hangar18:" /> :hangar18:</div></div></div><div id="cmt_706" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://24.media.tumblr.com/tumblr_m4bkd9Quur1r9uwuao1_400.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_706"></b><a href="#"><font color="#006595"><b> @k_viva...</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div> <img src="../posts/smileys/xD.gif" alt=":xd:" />  <img src="../posts/smileys/icon_mrgreen.gif" alt=":mrgreen:" />  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> feliz año desde mexico un abrazo pa\\' todos cabrones  <img src="../posts/smileys/bd.gif" alt=":heee:" />  <img src="../posts/smileys/hangar.gif" alt=":hangar:" /> </div></div></div><div id="cmt_840" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i741.photobucket.com/albums/xx53/salva_ca/immortal-gif_o_GIFSoupcom.gif?t=1301619275" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_840"></b><a href="#"><font color="#006595"><b> @salva_ca</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Feliz año muchachos! <br />
+<img src="http://3.bp.blogspot.com/_9YEQriBb7gk/TOlw8k0B1PI/AAAAAAAAC_U/695rQzXFqVE/s400/Forever%2BAlone2.png" alt="http://3.bp.blogspot.com/_9YEQriBb7gk/TOlw8k0B1PI/AAAAAAAAC_U/695rQzXFqVE/s400/Forever%2BAlone2.png" onerror="error_img(this);"/><br />
+</div></div></div><div id="cmt_1608" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://www.gmkfreelogos.com/logos/M/img/Mr__Bungle.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1608"></b><a href="#"><font color="#006595"><b> @ilfachini</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>SEEEE LOCO!!! Este gue año fundado en metal!!!  <img src="../posts/smileys/jedbanger.gif" alt=":jedbanger2:" /> :jedbanger2: <img src="../posts/smileys/jedbanger.gif" alt=":jedbanger2:" /> :jedbanger2: <img src="../posts/smileys/jedbanger.gif" alt=":jedbanger2:" /> :jedbanger2:<br />
+<br />
+Feliz año per tutti! <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> </div></div></div><div id="cmt_947" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://img846.imageshack.us/img846/7472/vic1984.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_947"></b><a href="#"><font color="#006595"><b> @SebaDeth</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>Happy Fucking New Year!!!!!!!!!!!!!!!  <img src="../posts/smileys/1130.gif" alt=":fuck:" /> </div></div></div><div id="cmt_1361" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://i.imgur.com/znHa8.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1361"></b><a href="#"><font color="#006595"><b> @Slayer91</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div><blockquote><div class="cita"><a href="perfil/Miguel_Megadeth10/">Miguel_Megadeth10</a></div><div class="citacuerpo"><img src="http://i.imgur.com/t2bQk.jpg" alt="http://i.imgur.com/t2bQk.jpg" onerror="error_img(this);"/> <br />
+Feliz año nuevo tengan señores, que se la pasen de poca madre y salud  <img src="../posts/smileys/megaforce.gif" alt=":megaforce:" /> :megaforce: :megaforce:[/b]</div></blockquote><br />
+</div></div></div><div id="cmt_1867" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://2.bp.blogspot.com/_H3YzJYU5Qis/TA8F05416ZI/AAAAAAAAADk/56RM4EEdI9U/s1600/Kreator+-+pleasure+to+kill.jpg" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_1867"></b><a href="#"><font color="#006595"><b> @pleasuretokill</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div>gracias muchachos! igualmente para ustedes  <img src="../posts/smileys/bang.gif" alt=":headbang:" /> </div></div></div><div id="cmt_50" style="margin-top:15px;"><div><a href="#"><img style="    border: 1px solid #45484D;
+	margin-right: 5px;" src="http://24.media.tumblr.com/tumblr_m04kapizGe1qlbtn3o1_500.gif" width="54" height="54" align="left"></a>
+	</div>
+	<div style="border: 1px solid #45484D;border-left:3px solid gray;
+	overflow: hidden;
+	padding: 5px;
+	word-wrap: break-word;color:#FFF;    background: none repeat scroll 0 0 #333334;"><div style="border-bottom: 1px dashed #45484D;padding-bottom: 5px;margin-bottom: 5px;;"><b id="autor_cmnt_50"></b><a href="#"><font color="#006595"><b> @morocomerino</b></font></a> <font class="size11" color="grey">Hace 11 años</font><span style="float: right; width: 200px; text-align: right;"></span></div><div> <img src="../posts/smileys/clab.gif" alt=":clab:" /> :clab: <img src="../posts/smileys/clab.gif" alt=":clab:" /> :clab:<br />
+<b>Feliz año para todoosssssssssssssssss!!</b></div></div></div>
+
+
+<!-- fin comentarios --></div></div></div><div id="pie">
+	<div> 
+
+	<a href="#">Protocolo</a> -
+	<a href="#">Aporta Tus Ideas</a> -
+	<a href="#">Enlazanos</a> -
+	<a href="#">Widget</a> -
+	<a href="#">Contacto</a> -
+	<a href="#">Mapa del Sitio</a> -
+	<a href="#">Términos y condiciones</a> -
+	<a href="#" target="_blank"><span style="color:#F00">RED VANKER</span></a>
+	<font size="1" face="arial" color="#FFFFFF"><span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"></span></font><center><font size="1" face="arial" color="#FFFFFF">Powered by <a href="#" title="Spirate" target="_blank">Spirate 2.3</a> &amp;
+<a href="#" title="Free Forum Software" target="_blank">SMF</a>
+
+	
+
+	
+
+</font>
+	
+	</center></div>
+</div>
+
+   
+</body></html>
